@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	=======================================================
+	This is an ant build file for a SixthSense Java project
+	=======================================================
+-->
+<project name="SixthSense" default="package" basedir=".">
+	
+	<!-- set up the properties -->
+	<property environment="env"/>
+
+	<property name="src.dir" value="src"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="build.dir" value="build"/>
+	<property name="build.classes" value="${build.dir}/classes"/>
+	<property name="dist.dir" value="dist"/>
+	<property name="jar.name" value="${ant.project.name}.jar"/>
+
+    <!-- attributes in manifest -->
+    <property name="user.name" value="Minjie Zha"/>
+    <property name="jar.version" value="0.1 beta"/>
+
+	<!-- build classpath -->
+	<path id="java.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<!-- Prepare to build -->
+	<target name="prepare" depends="clean">
+		<!-- create directories -->
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.classes}"/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+	<!-- compile the source code -->
+	<target name="compile" depends="prepare">
+		<javac destdir="${build.classes}"
+                includes="**/*.java">
+            <src path="${src.dir}"/>
+			<classpath refid="java.classpath"/>
+		</javac>
+	</target>
+
+	<!-- generate the jar package -->
+	<target name="package" depends="compile">
+		<jar destfile="${dist.dir}/${jar.name}" basedir="${build.classes}">
+            <manifest>
+                <!-- Who is building the jar? -->
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Implementation-Version" value="${jar.version}"/>
+            </manifest>
+		</jar>
+	</target>
+
+    <!-- run -->
+    <target name="run" depends="package">
+        <java classname="wuw.Wuw" fork="true">
+            <classpath>
+                <pathelement location="${dist.dir}/${jar.name}"/>
+            </classpath>
+            <classpath refid="java.classpath"/>
+        </java>
+    </target>
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+</project>
