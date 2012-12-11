@@ -20,11 +20,15 @@
     <property name="user.name" value="Minjie Zha"/>
     <property name="jar.version" value="0.1 beta"/>
 
+    <!-- JavaFx lib path -->
+    <property name="javafx.jar" value="${env.JAVA_HOME}/jre/lib/jfxrt.jar"/>
+
 	<!-- build classpath -->
 	<path id="java.classpath">
 		<fileset dir="${lib.dir}">
 			<include name="**/*.jar"/>
 		</fileset>
+        <pathelement location="${javafx.jar}"/>
 	</path>
 
 	<!-- Prepare to build -->
@@ -37,7 +41,7 @@
 
 	<!-- compile the source code -->
 	<target name="compile" depends="prepare">
-		<javac destdir="${build.classes}"
+		<javac includeantruntime="false" destdir="${build.classes}"
                 includes="**/*.java">
             <src path="${src.dir}"/>
 			<classpath refid="java.classpath"/>
@@ -46,6 +50,9 @@
 
 	<!-- generate the jar package -->
 	<target name="package" depends="compile">
+        <copy todir="${build.classes}">
+            <fileset dir="${src.dir}" excludes="**/*.java" />
+        </copy>
 		<jar destfile="${dist.dir}/${jar.name}" basedir="${build.classes}">
             <manifest>
                 <!-- Who is building the jar? -->
@@ -57,7 +64,7 @@
 
     <!-- run -->
     <target name="run" depends="package">
-        <java classname="wuw.Wuw" fork="true">
+        <java classname="wuw.WUW" fork="true">
             <classpath>
                 <pathelement location="${dist.dir}/${jar.name}"/>
             </classpath>
