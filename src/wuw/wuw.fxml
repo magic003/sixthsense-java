@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
 
-<Label text="User Name:"/>
+<Pane>
+    <!-- labelM -->
+    <StackPane alignment="${Pos.CENTER}" layoutX="35" layoutY="9">
+        <Rectangle fill="#400000" width="22" height="19"/>
+        <Text fill="white" text="M"/>
+    </StackPane>
+    <!-- labelN -->
+    <StackPane alignment="${Pos.CENTER}" layoutX="35" layoutY="35">
+        <Rectangle fill="maroon" width="21" height="19"/>
+        <Text fill="white" text="N"/>
+    </StackPane>
+    <!-- labelO -->
+    <StackPane alignment="${Pos.CENTER}" layoutX="9" layoutY="9">
+        <Rectangle fill="#400000" width="21" height="19"/>
+        <Text fill="white" text="O"/>
+    </StackPane>
+    <!-- labelP -->
+    <StackPane alignment="${Pos.CENTER}" layoutX="9" layoutY="35">
+        <Rectangle fill="maroon" width="20" height="19"/>
+        <Text fill="white" text="P"/>
+    </StackPane>
+</Pane>
