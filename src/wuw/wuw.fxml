@@ -27,4 +27,14 @@
         <Rectangle fill="maroon" width="20" height="19"/>
         <Text fill="white" text="P"/>
     </StackPane>
+
+    <!-- labelDemoName -->
+    <StackPane alignment="${Pos.CENTER}" layoutX="60" layoutY="9">
+        <Rectangle fill="black" width="44" height="16"/>
+        <Text fill="#8080FF" text="WUW">
+            <font>
+                <Font size="13.5"/>
+            </font>
+        </Text>
+    </StackPane>
 </Pane>
