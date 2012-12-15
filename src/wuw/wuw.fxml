@@ -37,4 +37,10 @@
             </font>
         </Text>
     </StackPane>
+
+    <!-- lblResult -->
+    <StackPane alignment="${Pos.CENTER_RIGHT}" layoutX="138" layoutY="9">
+        <Rectangle fill="black" width="28" height="13"/>
+        <Text fill="white" text="Test"/>
+    </StackPane>
 </Pane>
