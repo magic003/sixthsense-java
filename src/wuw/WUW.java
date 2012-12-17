@@ -19,7 +19,6 @@ public class WUW extends Application {
         stage.setTitle("WUW");
         stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root, 1024, 768);
-        scene.setFill(Color.BLACK);
         stage.setScene(scene);
         stage.show();
     }

@@ -1,0 +1,27 @@
+.root {
+    -fx-background-color: black;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+#labelM, #labelO {
+    -fx-background-color: #400000;
+}
+
+#labelN, #labelP {
+    -fx-background-color: maroon;
+}
+
+#labelDemoName {
+    -fx-text-fill: #8080FF;
+    -fx-font: normal 13.5 'sans-serif';
+}
+
+#lblResult {
+    -fx-alignment: center-right;
+}
+
+

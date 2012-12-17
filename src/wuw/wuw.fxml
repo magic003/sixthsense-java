@@ -6,41 +6,19 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.geometry.*?>
 
-<Pane>
+<Pane stylesheets="wuw/styles.css" xmlns:fx="http://javafx.com/fxml">
     <!-- labelM -->
-    <StackPane alignment="${Pos.CENTER}" layoutX="35" layoutY="9">
-        <Rectangle fill="#400000" width="22" height="19"/>
-        <Text fill="white" text="M"/>
-    </StackPane>
+    <Label fx:id="labelM" text="M" layoutX="35" layoutY="9" minWidth="22" minHeight="19"/>
     <!-- labelN -->
-    <StackPane alignment="${Pos.CENTER}" layoutX="35" layoutY="35">
-        <Rectangle fill="maroon" width="21" height="19"/>
-        <Text fill="white" text="N"/>
-    </StackPane>
+    <Label fx:id="labelN" text="N" layoutX="35" layoutY="35" minWidth="21" minHeight="19"/>
     <!-- labelO -->
-    <StackPane alignment="${Pos.CENTER}" layoutX="9" layoutY="9">
-        <Rectangle fill="#400000" width="21" height="19"/>
-        <Text fill="white" text="O"/>
-    </StackPane>
+    <Label fx:id="labelO" text="O" layoutX="9" layoutY="9" minWidth="21" minHeight="19"/>
     <!-- labelP -->
-    <StackPane alignment="${Pos.CENTER}" layoutX="9" layoutY="35">
-        <Rectangle fill="maroon" width="20" height="19"/>
-        <Text fill="white" text="P"/>
-    </StackPane>
+    <Label fx:id="labelP" text="P" layoutX="9" layoutY="35" minWidth="20" minHeight="19"/>
 
     <!-- labelDemoName -->
-    <StackPane alignment="${Pos.CENTER}" layoutX="60" layoutY="9">
-        <Rectangle fill="black" width="44" height="16"/>
-        <Text fill="#8080FF" text="WUW">
-            <font>
-                <Font size="13.5"/>
-            </font>
-        </Text>
-    </StackPane>
+    <Label fx:id="labelDemoName" text="WUW" layoutX="60" layoutY="9" minWidth="44" minHeight="16"/>
 
     <!-- lblResult -->
-    <StackPane alignment="${Pos.CENTER_RIGHT}" layoutX="138" layoutY="9">
-        <Rectangle fill="black" width="28" height="13"/>
-        <Text fill="white" text="Test"/>
-    </StackPane>
+    <Label fx:id="lblResult" text="Test" layoutX="138" layoutY="9" minWidth="28" minHeight="13"/>
 </Pane>
