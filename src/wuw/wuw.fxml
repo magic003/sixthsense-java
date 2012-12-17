@@ -22,8 +22,16 @@
     <!-- lblResult -->
     <Label fx:id="lblResult" text="Test" layoutX="138" layoutY="9" minWidth="28" minHeight="13"/>
 
+    <!-- tabSettings -->
+    <TabPane fx:id="tabSettings" layoutX="375" layoutY="22" minWidth="640" minHeight="217">
+        <Tab fx:id="tabPageCamera" text="CAMERA" closable="false">
+
+        </Tab>
+    </TabPane>
+
     <!-- btnExit -->
     <Button fx:id="btnExit" text="Exit" layoutX="928" layoutY="10" minWidth="45" minHeight="33"/>
     <!-- btnShowHide -->
     <Button fx:id="btnShowHide" layoutX="980" layoutY="10" minWidth="33" minHeight="33"/>
+
 </Pane>

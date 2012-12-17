@@ -48,3 +48,13 @@
     -fx-background-color: gray;
 }
 
+#tabSettings {
+    -fx-font: normal 14 'sans-serif';
+    -fx-tab-min-width: 81;
+    -fx-tab-min-height: 25;
+    -fx-padding: 0;
+}
+
+#tabSettings *.tab-header-background {
+    -fx-background-color: transparent;
+}
