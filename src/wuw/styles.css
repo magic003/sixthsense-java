@@ -38,4 +38,13 @@
     -fx-background-color: maroon;
 }
 
+#btnShowHide {
+    -fx-background-color: transparent;
+    -fx-border-color: silver;
+    -fx-text-fill: dimgray;
+}
+
+#btnShowHide:hover {
+    -fx-background-color: gray;
+}
 

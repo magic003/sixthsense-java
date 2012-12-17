@@ -24,4 +24,6 @@
 
     <!-- btnExit -->
     <Button fx:id="btnExit" text="Exit" layoutX="928" layoutY="10" minWidth="45" minHeight="33"/>
+    <!-- btnShowHide -->
+    <Button fx:id="btnShowHide" layoutX="980" layoutY="10" minWidth="33" minHeight="33"/>
 </Pane>
