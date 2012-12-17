@@ -24,4 +24,18 @@
     -fx-alignment: center-right;
 }
 
+#btnExit {
+    -fx-background-color: transparent;
+    -fx-border-color: silver;
+    -fx-text-fill: dimgray;
+}
+
+#btnExit:pressed {
+    -fx-background-color: #C00000;
+}
+
+#btnExit:hover {
+    -fx-background-color: maroon;
+}
+
 
