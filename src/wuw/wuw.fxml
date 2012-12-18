@@ -24,8 +24,14 @@
 
     <!-- tabSettings -->
     <TabPane fx:id="tabSettings" layoutX="375" layoutY="22" minWidth="640" minHeight="217">
-        <Tab fx:id="tabPageCamera" text="CAMERA" closable="false">
-
+        <Tab text="CAMERA" closable="false">
+            <Pane fx:id="tabPageCamera" layoutX="4" layoutY="29" minWidth="632" minHeight="184">
+                <Label fx:id="lblRecord" layoutX="366" layoutY="9" minWidth="168" minHeight="24" text="[Recording]" visible="false"/>
+                <Button fx:id="btnClear" layoutX="413" layoutY="123" minWidth="75" minHeight="23" text="CLEAR"/>
+                <Button fx:id="btnView" layoutX="413" layoutY="94" minWidth="75" minHeight="23" text="VIEW"/>
+                <Button fx:id="btnLoad" layoutX="413" layoutY="65" minWidth="75" minHeight="23" text="LOAD"/>
+                <Button fx:id="btnRecord" layoutX="413" layoutY="36" minWidth="75" minHeight="23" text="RECORD"/>
+            </Pane>
         </Tab>
     </TabPane>
 

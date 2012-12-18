@@ -7,6 +7,10 @@
     -fx-alignment: center;
 }
 
+.button {
+    -fx-padding: 2;
+}
+
 #labelM, #labelO {
     -fx-background-color: #400000;
 }
@@ -57,4 +61,15 @@
 
 #tabSettings *.tab-header-background {
     -fx-background-color: transparent;
+}
+
+#tabPageCamera {
+    -fx-padding: 3;
+}
+
+#lblRecord {
+    -fx-background-color: transparent;
+    -fx-font: bold 19.5 'monospace';
+    -fx-text-fill: firebrick;
+    -fx-text-alignment: center;
 }
