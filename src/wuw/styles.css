@@ -3,7 +3,6 @@
 }
 
 .label {
-    -fx-text-fill: white;
     -fx-alignment: center;
 }
 
@@ -12,10 +11,12 @@
 }
 
 #labelM, #labelO {
+    -fx-text-fill: white;
     -fx-background-color: #400000;
 }
 
 #labelN, #labelP {
+    -fx-text-fill: white;
     -fx-background-color: maroon;
 }
 
@@ -25,6 +26,7 @@
 }
 
 #lblResult {
+    -fx-text-fill: white;
     -fx-alignment: center-right;
 }
 
@@ -73,3 +75,12 @@
     -fx-text-fill: firebrick;
     -fx-text-alignment: center;
 }
+
+#comboBoxCameras {
+    -fx-font: normal 14 'sans-serif';
+}
+
+#groupBoxCameraInfo {
+    -fx-font: normal 14 'sans-serif';
+}
+

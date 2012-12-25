@@ -31,6 +31,16 @@
                 <Button fx:id="btnView" layoutX="413" layoutY="94" minWidth="75" minHeight="23" text="VIEW"/>
                 <Button fx:id="btnLoad" layoutX="413" layoutY="65" minWidth="75" minHeight="23" text="LOAD"/>
                 <Button fx:id="btnRecord" layoutX="413" layoutY="36" minWidth="75" minHeight="23" text="RECORD"/>
+
+                <ComboBox fx:id="comboBoxCameras" layoutX="3" layoutY="6" minWidth="267" minHeight="24" promptText="Select A Camera"/>
+
+                <Pane fx:id="groupBoxCameraInfo" layoutX="3" layoutY="36">
+                    <CheckBox fx:id="checkBoxCameraFPSLimit" layoutX="9" layoutY="72" minWidth="185" minHeight="21" text="Limit Frames Per Second"/>
+                    <Label fx:id="labelCameraFPSValue" layoutX="101" layoutY="50" minWidth="35" minHeight="17" text="0.00"/>
+                    <Slider fx:id="numericUpDownCameraFPSLimit" disable="true" blockIncrement="5" layoutX="198" layoutY="70" max="30" minWidth="50" minHeight="23" value="30"  showTickLabels="true" visible="false"/>
+                    <Label fx:id="labelCameraFPS" layoutX="6" layoutY="50" minWidth="89" minHeight="17" text="Current FPS:" />
+                    <Button fx:id="buttonCameraProperties" layoutX="6" layoutY="22" minWidth="242" minHeight="26" text="Adjust Camera Properties"/>
+                </Pane>
             </Pane>
         </Tab>
     </TabPane>
