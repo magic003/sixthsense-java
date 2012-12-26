@@ -65,7 +65,7 @@
     -fx-background-color: transparent;
 }
 
-#tabPageCamera {
+#tabPageCamera, #tabPageTokens {
     -fx-padding: 3;
 }
 
@@ -76,11 +76,20 @@
     -fx-text-alignment: center;
 }
 
-#comboBoxCameras {
+#comboBoxCameras, #comboBoxMarkers {
     -fx-font: normal 14 'sans-serif';
 }
 
-#groupBoxCameraInfo {
+#groupBoxCameraInfo, #groupBoxMarkerControl {
     -fx-font: normal 14 'sans-serif';
 }
 
+#labelMarkerData {
+    -fx-border-insets: 0;
+    -fx-border-width: 2px;
+    -fx-border-color: black lightgray lightgray black;
+}
+
+#buttonMarkerAdd {
+    -fx-font: normal 14 'sans-serif';
+}
