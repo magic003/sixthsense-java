@@ -62,6 +62,27 @@
                 <Button fx:id="buttonMarkerAdd" layoutX="6" layoutY="5" minWidth="108" minHeight="26" text="New Markers"/>
             </Pane>
         </Tab>
+        <Tab text="APPS" closable="false">
+            <Pane fx:id="tabPageApps" layoutX="4" layoutY="29" minWidth="632" minHeight="184">
+                <CheckBox fx:id="checkBox_F" layoutX="591" layoutY="154" minWidth="35" minHeight="21" text="F"/>
+                <Button fx:id="buttonEffectsDemo" layoutX="118" layoutY="146" minWidth="106" minHeight="29" text="Effects"/>
+                <Button fx:id="buttonTestDemo" layoutX="6" layoutY="6" minWidth="106" minHeight="29" text="Test"/>
+                <Button fx:id="buttonGlobeDemo" layoutX="118" layoutY="6" minWidth="106" minHeight="29" text="Globe"/>
+                <Button fx:id="buttonStockDemo" layoutX="118" layoutY="111" minWidth="106" minHeight="29" text="Stock"/>
+                <Button fx:id="buttonGalleryDemo" layoutX="6" layoutY="146" minWidth="106" minHeight="29" text="Gallery"/>
+                <Button fx:id="buttonBookDemo" layoutX="230" layoutY="41" minWidth="106" minHeight="29" text="Book"/>
+                <Button fx:id="buttonMailDemo" layoutX="118" layoutY="41" minWidth="106" minHeight="29" text="Mail"/>
+                <Button fx:id="buttonNewsPaperDemo" layoutX="230" layoutY="6" minWidth="106" minHeight="29" text="NewsPaper"/>
+                <Button fx:id="buttonWeatherDemo" layoutX="118" layoutY="76" minWidth="106" minHeight="29" text="Weather"/>
+                <Button fx:id="buttonMenuDemo" layoutX="230" layoutY="111" minWidth="106" minHeight="29" text="Menu"/>
+                <Button fx:id="buttonClockDemo" layoutX="230" layoutY="76" minWidth="106" minHeight="29" text="Clock"/>
+                <Button fx:id="buttonPhotoDemo" layoutX="6" layoutY="111" minWidth="74" minHeight="29" text="Photo"/>
+                <Button fx:id="buttonGestureDemo" layoutX="230" layoutY="146" minWidth="106" minHeight="29" text="Gesture"/>
+                <Button fx:id="buttonMapDemo" layoutX="6" layoutY="76" minWidth="106" minHeight="29" text="Map"/>
+                <Button fx:id="buttonDrawDemo" layoutX="6" layoutY="41" minWidth="106" minHeight="29" text="Draw"/>
+                <Label fx:id="labelDemoInstructions" disable="true" layoutX="342" layoutY="6" minWidth="284" minHeight="134" text=""/>
+            </Pane>
+        </Tab>
     </TabPane>
 
     <!-- btnExit -->

@@ -65,7 +65,7 @@
     -fx-background-color: transparent;
 }
 
-#tabPageCamera, #tabPageTokens {
+#tabPageCamera, #tabPageTokens, #tabPageApps {
     -fx-padding: 3;
 }
 
@@ -90,6 +90,13 @@
     -fx-border-color: black lightgray lightgray black;
 }
 
-#buttonMarkerAdd {
+#buttonMarkerAdd, #tabPageApps .button {
     -fx-font: normal 14 'sans-serif';
+}
+
+#labelDemoInstructions {
+    -fx-font: normal 14 'sans-serif';
+    -fx-border-insets: 0;
+    -fx-border-width: 2px;
+    -fx-border-color: black lightgray lightgray black;
 }
