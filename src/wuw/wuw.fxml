@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.geometry.*?>
 
-<Pane stylesheets="wuw/styles.css" xmlns:fx="http://javafx.com/fxml">
+<Pane fx:controller="wuw.WUWController" stylesheets="wuw/styles.css" xmlns:fx="http://javafx.com/fxml">
     <!-- labelM -->
     <Label fx:id="labelM" text="M" layoutX="35" layoutY="9" minWidth="22" minHeight="19"/>
     <!-- labelN -->
@@ -86,7 +86,7 @@
     </TabPane>
 
     <!-- btnExit -->
-    <Button fx:id="btnExit" text="Exit" layoutX="928" layoutY="10" minWidth="45" minHeight="33"/>
+    <Button fx:id="btnExit" text="Exit" layoutX="928" layoutY="10" minWidth="45" minHeight="33" onAction="#handleBtnExitAction"/>
     <!-- btnShowHide -->
     <Button fx:id="btnShowHide" layoutX="980" layoutY="10" minWidth="33" minHeight="33"/>
 
